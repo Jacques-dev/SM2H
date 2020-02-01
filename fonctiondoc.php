@@ -12,12 +12,12 @@
 
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          
+
           <link rel="stylesheet" href="style/style.css">
           <link rel="stylesheet" href="style/pages/fonctiondoc.css">
           <link rel="stylesheet" href="style/pages/medecin.css">
           <link rel="stylesheet" href="style/pages/popup.css">
-          
+
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -63,7 +63,7 @@
     <?php
   }
 ?>
-            
+
 <?php
   function last() {
     ?>
@@ -80,9 +80,16 @@
 <?php
   function deco($page) {
     ?>
-    <form method="post" action="<?php echo ($page); ?>" >
-      <input type="submit" name="deconnexion" value="deconnexion">
-    </form>
+    <div class="svg-wrapper">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape" height="40" width="150" />
+        <div id="text">
+          <form method="post" action="<?php echo ($page); ?>" >
+            <input type="submit" name="deconnexion" value="deconnexion" class="spot">
+          </form>
+        </div>
+      </svg>
+    </div>
     <?php popup($page);
     $_SESSION["test"] = $page;
   }
@@ -96,17 +103,17 @@
       <div class="popup">
         <span class="popuptext" id="myPopup">
           Vous êtes sûre de vouloir vous déconnecter ?
-          
+
           <form method="post" action="fonctiondoc.php">
             <input type="submit" name="decoON" value="Oui">
           </form>
           <form method="post" action="fonctiondoc.php">
             <input type="submit" name="decoOFF" value="Non">
           </form>
-          
+
         </span>
       </div>
-      
+
       <script>
         var popup = document.getElementById("myPopup");
         popup.classList.toggle("show");
@@ -118,7 +125,7 @@
 
 <?php
   if (isset($_POST["decoOFF"])) {
-    $test = 
+    $test =
     header("Location:" . $_SESSION["test"]);
   }
 
@@ -126,18 +133,3 @@
     header("Location: index.php");
   }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -9,7 +9,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .navbarIcon{
   height: 3rem;
 }
@@ -46,36 +45,12 @@ body {
 
 .custom-button{
   padding: 0;
-  border: none;
-  background: none;
-  margin: 0 auto;
+border: none;
+background: none;
+margin: 0 auto;
 }
 .dropdown-toggle-custom::after {
   content: none;
-}
-
-.main{
-  text-align: left;
-  padding-left: 2rem;
-  height: 100%;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.userPicture{
-  width: 10rem;
-  padding-right: 2rem;
-}
-
-
-.nav-tabs {
-  margin-bottom: 0;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.active{
-  background-color: black;
 }
 
 .container {
@@ -87,5 +62,89 @@ body {
   height: 500px;
   background-color: mediumpurple;
 }
+.main{
+  text-align: left;
+  padding-left: 2rem;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+.userPicture{
+  width: 10rem;
+  padding-right: 2rem;
+}
+
+.nav-item-custom{
+  margin-top: 1rem;
+  background-color:#d9d2e9;
+}
+.nav-link.active{
+    background-color: #8e7cc3 !important;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.tab-pane{
+  background-color: #b4a7d6;
+}
 
 
+
+/*
+ BUTTON STYLING
+*/
+
+
+
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+
+.svg-wrapper #shape {
+  stroke-width: 6px;
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(91, 51, 255, 1);
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+
+.svg-wrapper #text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+.svg-wrapper #text input {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: white;
+  fill: rgba(91, 51, 255, 0.80);
+}
