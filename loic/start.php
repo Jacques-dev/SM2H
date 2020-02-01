@@ -33,16 +33,13 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="//codeply.com"><img class="navbarIcon" src="./images/calendar.png" alt="logo"></a>
+                    <a class="nav-link" href="#"><img class="navbarIcon" src="./images/calendar.png" alt="Calendar"></a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle dropdown-toggle-custom" href="#" id="navbardrop" data-toggle="dropdown">
-                    <img class="navbarIcon" src="./images/profile.png" alt="logo">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Gérer mon compte</a>
-                    <a class="dropdown-item" href="#">Déconnexion</a>
-                  </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="navbarIcon" src="./images/profile.png" alt="Profil"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="navbarIcon" src="./images/deco.png" alt="Deconnexion"></a>
                 </li>
             </ul>
         </div>
