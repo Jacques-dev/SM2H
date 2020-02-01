@@ -88,3 +88,12 @@ margin: 0 auto;
 .tab-pane{
   background-color: #b4a7d6;
 }
+
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #b4a7d6;
+}
+.table-hover tbody tr:hover td {
+    background: #9487b5;
+}
