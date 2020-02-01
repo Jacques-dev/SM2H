@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  function start() {
+  function start($page) {
     ?>
       <!doctype html>
       <html lang="fr">
@@ -30,31 +30,28 @@
 
         <body>
           <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
-            <a href="/" class="navbar-brand abs">Nom</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse justify-content-stretch" id="navbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="//codeply.com"><img class="navbarIcon" src="./images/logo.png" alt="logo"></a>
-                </li>
-              </ul>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="//codeply.com"><img class="navbarIcon" src="./images/calendar.png" alt="logo"></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle dropdown-toggle-custom" href="#" id="navbardrop" data-toggle="dropdown">
-                    <img class="navbarIcon" src="./images/profile.png" alt="logo">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Gérer mon compte</a>
-                    <a class="dropdown-item" href="#">Déconnexion</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
+              <a href="/" class="navbar-brand abs">Nom</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse justify-content-stretch" id="navbar">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="//codeply.com"><img class="navbarIcon" src="./images/logo.png" alt="logo"></a>
+                      </li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="navbarIcon" src="./images/calendar.png" alt="Calendar"></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="navbarIcon" src="./images/profile.png" alt="Profil"></a>
+                      </li>
+                      <li class="nav-item">
+                          <?php deco($page); ?>
+                      </li>
+                  </ul>
+              </div>
           </nav>
 
           <div class="container">
@@ -80,16 +77,11 @@
 <?php
   function deco($page) {
     ?>
-    <div class="svg-wrapper">
-      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-        <rect id="shape" height="40" width="150" />
-        <div id="text">
-          <form method="post" action="<?php echo ($page); ?>" >
-            <input type="submit" name="deconnexion" value="deconnexion" class="spot">
-          </form>
-        </div>
-      </svg>
-    </div>
+    <form method="post" action="<?php echo ($page); ?>" >
+      <button type="submit" name="deconnexion" id="decoimg">
+        <img src="images/deco.png" class="navbarIcon">
+      </button>
+    </form>
     <?php popup($page);
     $_SESSION["test"] = $page;
   }
@@ -125,7 +117,6 @@
 
 <?php
   if (isset($_POST["decoOFF"])) {
-    $test =
     header("Location:" . $_SESSION["test"]);
   }
 
