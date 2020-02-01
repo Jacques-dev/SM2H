@@ -1,6 +1,6 @@
 <?php
   require('fonctiondoc.php');
-  start();
+  start("medecin.php");
 ?>
 
 
@@ -8,13 +8,11 @@
   <div class="content">
     <div class="container">
       <div class="row">
-        <a href="dmp.php" class="col-sm-4 tabmedecin">Consulter un DMP</a>
-        <a href="acte.php" class="col-sm-4 tabmedecin">Consulter un ACTE</a>
-        <a href="examen.php" class="col-sm-4 tabmedecin">Rédiger un examen</a>
+        <a href="dmp.php" class="col-sm-4 tabmedecin"><h>Consulter un DMP</h></a>
+        <a href="acte.php" class="col-sm-4 tabmedecin"><h>Consulter un ACTE</h></a>
+        <a href="examen.php" class="col-sm-4 tabmedecin"><h>Rédiger un examen</h></a>
       </div>
     </div>
-
-    <?php deco("medecin.php"); ?>
   </div>
 
 
