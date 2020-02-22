@@ -33,7 +33,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img class="navbarIcon" src="./images/calendar.png" alt="Calendar"></a>
+                    <a class="nav-link" href="https://calendar.google.com/"><img class="navbarIcon" src="./images/calendar.png" alt="Calendar"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img class="navbarIcon" src="./images/profile.png" alt="Profil"></a>
