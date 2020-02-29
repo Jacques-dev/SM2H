@@ -1,0 +1,144 @@
+:root {
+  --navbarColor: #733bd5;
+  --navbarColorHover: #734ad5;
+  --backgroundColor: #efefef;
+}
+
+h {
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbarIcon{
+  height: 3rem;
+}
+.navbar-custom {
+    background-color: var(--navbarColor);
+    margin:0;
+}/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    margin:0;
+}/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        right: 19rem;
+        text-align: right;
+    }
+
+    .navbarIcon{
+      height: 5rem;
+    }
+}
+
+.custom-button{
+  padding: 0;
+border: none;
+background: none;
+margin: 0 auto;
+}
+.dropdown-toggle-custom::after {
+  content: none;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.content {
+  text-align: center;
+}
+.main{
+  text-align: left;
+  padding-left: 2rem;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+.userPicture{
+  width: 10rem;
+  padding-right: 2rem;
+}
+
+.nav-item-custom{
+  margin-top: 1rem;
+  background-color:#d9d2e9;
+}
+.nav-link.active{
+    background-color: #8e7cc3 !important;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.tab-pane{
+  background-color: #b4a7d6;
+}
+
+#decoimg {
+  background-color: rgba(255,255,255,0);
+  border: 0px;
+  margin-top: 8px;
+}
+
+.popup {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  height: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+
+  margin-top: 25%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

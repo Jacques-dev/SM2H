@@ -13,10 +13,16 @@
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-          <link rel="stylesheet" href="style/style.css">
-          <link rel="stylesheet" href="style/pages/fonctiondoc.css">
-          <link rel="stylesheet" href="style/pages/medecin.css">
-          <link rel="stylesheet" href="style/pages/popup.css">
+          <link rel="stylesheet" href="../style.css">
+          <link rel="stylesheet" href="../Connexion/style.css">
+          <link rel="stylesheet" href="../DataBase/style.css">
+          <link rel="stylesheet" href="..//style.css">
+          <link rel="stylesheet" href="../DMP/style.css">
+          <link rel="stylesheet" href="../Hospitalisation/style.css">
+          <link rel="stylesheet" href="..//style.css">
+          <link rel="stylesheet" href="..//style.css">
+          <link rel="stylesheet" href="../Medecin/style.css">
+
 
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
