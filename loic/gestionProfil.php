@@ -1,4 +1,7 @@
-<?php require('start.php'); ?>
+<?php
+  require('../FonctionDoc/fonctiondoc.php');
+  start("medecin.php");
+?>
         <h1>Gérer mon profil</h1>
         <br>
         <div class="main" style="border-left: solid;border-right: solid;">
@@ -52,4 +55,6 @@
           </form>
 
         </div>
-<?php require('end.php'); ?>
+<?php
+last();
+?>

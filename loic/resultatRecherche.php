@@ -1,4 +1,8 @@
-<?php require('start.php'); ?>
+<?php
+  require('../FonctionDoc/fonctiondoc.php');
+  start("medecin.php");
+?>
+
 <br>
 <div class="main">
   <div class="input-group md-form form-sm form-2 pl-0">
@@ -43,4 +47,6 @@
             </div>
 
         </div>
-<?php require('end.php'); ?>
+<?php
+last();
+?>

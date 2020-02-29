@@ -1,4 +1,7 @@
-<?php require('start.php'); ?>
+<?php
+  require('../FonctionDoc/fonctiondoc.php');
+  start("medecin.php");
+?>
         <h1>Dossier du patient: Nom Prénom</h1>
         <br>
         <div class="main">
@@ -88,4 +91,6 @@
           </div>
 
         </div>
-<?php require('end.php'); ?>
+<?php
+last();
+?>
