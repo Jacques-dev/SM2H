@@ -43,15 +43,15 @@
               <div class="navbar-collapse collapse justify-content-stretch" id="navbar">
                   <ul class="navbar-nav">
                       <li class="nav-item">
-                          <a class="nav-link" href="//codeply.com"><img class="navbarIcon" src="./images/logo.png" alt="logo"></a>
+                          <a class="nav-link" href="//codeply.com"><img class="navbarIcon" src="../images/logo.png" alt="logo"></a>
                       </li>
                   </ul>
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="#"><img class="navbarIcon" src="./images/calendar.png" alt="Calendar"></a>
+                          <a class="nav-link" href="https://calendar.google.com/"><img class="navbarIcon" src="./images/calendar.png" alt="Calendar"></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#"><img class="navbarIcon" src="./images/profile.png" alt="Profil"></a>
+                          <a class="nav-link" href="#"><img class="navbarIcon" src="../images/profile.png" alt="Profil"></a>
                       </li>
                       <li class="nav-item">
                           <?php deco($page); ?>
@@ -85,7 +85,7 @@
     ?>
     <form method="post" action="<?php echo ($page); ?>" >
       <button type="submit" name="deconnexion" id="decoimg">
-        <img src="images/deco.png" class="navbarIcon">
+        <img src="../images/deco.png" class="navbarIcon">
       </button>
     </form>
     <?php popup($page);

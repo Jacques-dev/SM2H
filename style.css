@@ -92,6 +92,14 @@ margin: 0 auto;
   background-color: #b4a7d6;
 }
 
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #b4a7d6;
+}
+.table-hover tbody tr:hover td {
+    background: #9487b5;
+}
+
 #decoimg {
   background-color: rgba(255,255,255,0);
   border: 0px;

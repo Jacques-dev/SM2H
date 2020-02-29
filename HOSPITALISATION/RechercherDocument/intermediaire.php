@@ -1,29 +1,25 @@
 <!doctype html>
 <html lang="fr">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <title>SM2H</title>
     <link rel="stylesheet" href="style/style.css">
+  </head>
 
-</head>
+  <body>
 
-<body>
-	
-				<?php 
-                    $bouton = $_GET['add'];
-                    $id = $_GET['name'];
-                    if ( $bouton == "consulter documuents" ){
-                        Header("Location: ./../RechercherDocument/index.php?user=".$id);
-
-                } else {
-
-                        Header("Location: ./../AjoutHospi/index.php?user=".$id);
-            }
-
-                ?>
+    <?php
+    $bouton = $_GET['add'];
+    $id = $_GET['name'];
+    if ( $bouton == "consulter documuents" ){
+      Header("Location: ./../RechercherDocument/index.php?user=".$id);
+    } else {
+      Header("Location: ./../AjoutHospi/index.php?user=".$id);
+    }
+    ?>
 
 
-</body>
+  </body>
 
 </html>

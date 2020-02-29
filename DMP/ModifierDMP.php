@@ -1,37 +1,10 @@
-<!doctype html>
-<html lang="fr">
+<?php
+  require('../FonctionDoc/fonctiondoc.php');
+  start("ModifierDMP.php");
+?>
 
-<head>
-    <meta charset="utf-8">
-    <title>SM2H</title>
-    <link rel="stylesheet" href="style/style.css">
-
-</head>
-
-<body>
-	 
-	
-    <!--  NavBar -->
-    <div class="navBar">
-        <div onclick="location.href='./index.php';" class="navBarItemLeft">
-            <img class="navBarLogo" src="./images/logo.png" alt="logo">
-        </div>
-
-        <div onclick="window.open('./index.php');" class="navBarItemRight">
-            <img class="navBarLogo" src="./images/profile.png" alt="logo">
-        </div>
-        <div onclick="window.open('https://calendar.google.com/');" class="navBarItemRight">
-            <img class="navBarLogo" src="./images/calendar.png" alt="logo">
-        </div>
-        <div class="navBarTitle">
-            Nom de la personne connecté
-        </div>
-
-
-    </div>
-
-    <!-- content  -->
-    <div class="content">
+  <!-- content  -->
+  <div class="content">
 		<p class="centrer">
 			Dossier du patient : Nom Prénom<br>
 		</p>
@@ -48,9 +21,9 @@
 			</li>
 		</ul>
 
- 
-		<div id="Boite"> 
-			
+
+		<div id="Boite">
+
 			<div id="zoneAffichageChamps">
 				<form action="" method="post">
 					<label><span> Numéro de sécurité social </span> <input class="zoneTexte" type="text" value="01245678" ></label>
@@ -65,11 +38,11 @@
 				</form>
 
 			</div>
-			
-		</div>
-	
-	
-    </div>
-</body>
 
-</html>
+		</div>
+
+
+  </div>
+<?php
+last();
+?>
