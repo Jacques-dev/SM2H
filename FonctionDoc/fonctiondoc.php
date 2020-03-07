@@ -36,7 +36,7 @@
 
         <body>
           <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
-              <a href="/" class="navbar-brand abs">Nom</a>
+              <a class="navbar-brand abs">Nom</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -48,7 +48,7 @@
                   </ul>
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="https://calendar.google.com/"><img class="navbarIcon" src="../images/calendar.png" alt="Calendar"></a>
+                          <a class="nav-link" href="https://calendar.google.com/" target="_blank"><img class="navbarIcon" src="../images/calendar.png" alt="Calendar"></a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#"><img class="navbarIcon" src="../images/profile.png" alt="Profil"></a>
